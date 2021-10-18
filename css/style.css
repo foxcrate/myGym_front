@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Colors Used: #08D9D6  -  #252A34  -  #FF2E63  -  #EAEAEA */
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Style */
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+
+.bg-dark{
+    background-color: #252A34;
+    color: #fff;
+}
+
+.text-primary{
+    color: #FF2E63;
+}
+
+/* Section: navBar */
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#navBar .logo img{
+    width: 80px;
+}
+
+#navBar ul{
+    list-style: none;
+    display: flex;
+}
+
+#navBar ul li a{
+    color: #fff;
+    padding: 1rem;
+}
+
+#navBar ul li a:hover{
+    background-color: #08D9D6;
+    border-radius: 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.l-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.btn{
+    background-color: #08D9D6;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #FF2E63;
+}
+
+#showcase{
+    background: #252A34 url(../img/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /*overlay*/
+    background-color: rgba(0, 0, 0, 0.8) ;
+}
